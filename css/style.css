@@ -1,0 +1,58 @@
+body {
+  font-family: sans-serif;
+  background-image: url('https://media1.tenor.com/images/c6247e84df3098500c993441c9d0efa5/tenor.gif?itemid=5822639') ;
+}
+
+/* Make content area fill the entire browser window */
+html,
+.fullscreen {
+  display: flex;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+/* Center the content in the browser window */
+.container {
+  margin: auto;
+  text-align: center;
+}
+
+.title {
+  font-size: 3rem;
+  color: white;
+}
+.Removed {
+  visibility: hidden;
+  display: none;
+}
+
+/* https://stackoverflow.com/questions/446060/css-two-divs-next-to-each-other   */
+
+#divScheduleTemplate {
+  display: flex;
+}
+.divBalance {
+  width: 200px;
+  background: rgb(243, 53, 53);
+  /* Just so it's visible */
+}
+.divDate {
+  width: 200px;
+  /* Grow to rest of container */
+  background: rgba(255, 255, 255, 0.623);
+  /* Just so it's visible */
+}
+.divInterestPayment{
+  flex:1;
+  background: lightblue;
+}
+
+
+table, th, td{
+  border: 1px black solid;
+  color: white;
+
+  
+}

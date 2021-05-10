@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Loan Calculator</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="Put your description here.">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="white"/><!-- This MUST match the value in the Manifest.json -->
+    <link rel="apple-touch-icon" href="/images/android-launchericon-192-192.png">
+</head>
+<body class="fullscreen">
+
+
+
+
+  <div class="container">
+    <h1 class="title">Loan Calculator!</h1>
+    <table style = "margin:5px;">
+
+      <tbody>
+
+      <tr>
+        <td><label for="txtPrincipal"><b>Principal</b></label></td>
+        <td><label for="txtMonths"><b>Months</b> </label></td>
+        <td>            <label for="txtAPR"><b>APR</b></label>
+        </td>
+
+      </tr>
+
+      <tr>
+
+        <td>      
+          <input type="text" id="txtPrincipal" value="100000" oninput="ValidateNumber(this,true);" />
+        
+        </td>
+
+          <td>
+            
+            <input type="text" id="txtMonths" value="10" oninput="ValidateNumber(this,false);"/>
+          </td>
+
+          <td>
+            <input type="text" id="txtAPR" value="6" oninput="ValidateNumber(this,true);" />
+          </td>
+
+      </tr>
+
+    </tbody>
+
+    </table>
+
+    
+
+      <div id="divLoanTemplate" class="Removed">
+
+        <table>
+
+          <thead>
+
+        <tr>
+          <th>Principal</th>
+          <th>Months</th>
+          <th>Payment</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+
+        <td><div class="divPrincipal"></div></td>
+        <td><div class="divMonths"></div></td>
+        <td><div class="divMonthlyPayment"></div></td>
+
+      </tr>
+
+
+      </tbody>
+
+  
+  
+        </div>
+
+    </table>
+
+
+
+
+<input type = "button" class = "btnHide" value = "Hide" />
+
+      <div class = "divSchedule"></div>
+    </div>
+    <div id  = "divScheduleTemplate" class="Removed">
+      <div class = "divBalance">Balance</div>
+      <div class = "divDate">Date</div>
+      <div class = "divInterestPayment">Interest Payment</div>
+    </div>
+      <button type="button" onclick="loadJSON()">Calculate Loan</button>
+      <div id="divHistory"></div>
+  </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
