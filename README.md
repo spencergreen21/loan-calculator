@@ -1,3 +1,3 @@
 # loan-calculator
 
-Input months, APR, and principal of payment to output remaining balance, date, and interest payment
+Progressive web app that the user inputs months, APR, and principal of payment to get remaining balance, date, and interest payment of loan
